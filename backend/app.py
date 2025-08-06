@@ -63,15 +63,18 @@ def get_us_population_data():
         response.raise_for_status()
         
         # Parse the JSON data
-        data = response.json()
+        response_data = response.json()
+        
+        # Extract the data array from the response
+        data = response_data.get('data', [])
         
         # Transform the data into the required format
         transformed_data = []
         for item in data:
-            if 'year' in item and 'population' in item:
+            if 'Year' in item and 'Population' in item:
                 transformed_data.append({
-                    "year": item['year'],
-                    "population": item['population']
+                    "year": int(item['Year']),
+                    "population": int(item['Population'])
                 })
         
         return jsonify(transformed_data)
