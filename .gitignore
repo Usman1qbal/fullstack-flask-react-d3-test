@@ -1,0 +1,29 @@
+# Virtual Environment
+venv/
+env/
+
+# Database
+*.db
+*.sqlite
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js (for frontend)
+node_modules/
+npm-debug.log*
+
+# React
+build/
+.env.local
+
+# Logs
+*.log
+
+# Environment variables
+.env 
