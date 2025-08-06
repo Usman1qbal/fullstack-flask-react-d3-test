@@ -40,7 +40,7 @@ function App() {
     <div className="App">
       {/* Fixed Header */}
       <header className="header">
-        <h1>Welcome to our page</h1>
+        <h3>Welcome to the United Nations </h3>— <p>a place committed to peace, dignity, and equality on a healthy planet.</p>
       </header>
 
       <div className="main-container">
